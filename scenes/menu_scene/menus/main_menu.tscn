@@ -1,0 +1,74 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/menu_scene/font/new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scenes/menu_scene/menus/main_menu.gd" type="Script" id=2]
+
+[node name="main_menu" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="control" type="Control" parent="."]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="new_game_button" type="Button" parent="control"]
+margin_left = 192.0
+margin_top = 256.0
+margin_right = 392.0
+margin_bottom = 308.0
+text = "New Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="load_game_button" type="Button" parent="control"]
+margin_left = 192.0
+margin_top = 314.832
+margin_right = 392.0
+margin_bottom = 366.832
+disabled = true
+text = "Load Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="settings_button" type="Button" parent="control"]
+margin_left = 192.0
+margin_top = 373.947
+margin_right = 392.0
+margin_bottom = 425.947
+disabled = true
+text = "Settings"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quit_game_button" type="Button" parent="control"]
+margin_left = 192.0
+margin_top = 432.622
+margin_right = 392.0
+margin_bottom = 484.622
+text = "Quit Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="header" type="RichTextLabel" parent="control"]
+margin_left = 192.0
+margin_top = 64.0
+margin_right = 832.0
+margin_bottom = 149.0
+custom_fonts/mono_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]GAME NAME"
+text = "GAME NAME"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="control/new_game_button" to="." method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="control/load_game_button" to="." method="_on_load_game_button_pressed"]
+[connection signal="pressed" from="control/settings_button" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="control/quit_game_button" to="." method="_on_quit_game_button_pressed"]

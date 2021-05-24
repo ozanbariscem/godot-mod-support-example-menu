@@ -1,0 +1,20 @@
+[gd_scene format=2]
+
+[node name="load_game_menu" type="CanvasLayer"]
+
+[node name="control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="control"]
+margin_left = 376.0
+margin_top = 144.0
+margin_right = 1144.0
+margin_bottom = 424.0
+text = "LOAD GAME MENU"
+__meta__ = {
+"_edit_use_anchors_": false
+}
