@@ -2,7 +2,6 @@ extends CanvasLayer
 
 
 onready var parent := get_parent()
-onready var scroll_list := $control/ScrollContainer/HBoxContainer
 
 
 func _ready():
